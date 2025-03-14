@@ -17,9 +17,8 @@ function Carousel() {
         slidesPerView={1}
         navigation={false}
         loop={true}
-        
         pagination={{ clickable: true, dynamicBullets: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         className="rounded-xl"
       >
         <SwiperSlide className="bg-gray-100 flex items-center justify-center rounded-lg h-96">
