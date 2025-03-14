@@ -10,7 +10,7 @@ import { MoveLeft } from "lucide-react";
 
 function Carousel() {
   return (
-    <div className=" w-full h-screen max-w-5xl mx-auto px-4 py-8">
+    <div className=" w-full h-full max-w-5xl mx-auto px-4 py-8">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
