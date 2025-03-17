@@ -2,6 +2,7 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import "./globals.css";
+import LeafMotifBackground from "./components/leafBackground";
 
 export default function RootLayout({
   children,
@@ -10,11 +11,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-className="h-screen"
-        >
+      <body className="h-auto w-full">
         <Navbar/>
+        <LeafMotifBackground>
         {children}
+        </LeafMotifBackground>
         <Footer/>
       </body>
     </html>

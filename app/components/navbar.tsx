@@ -1,6 +1,8 @@
+import Link from 'next/link';
+
 export default function Navbar(){
     return(
-        <div className="navbar bg-[#03c10c] shadow-sm">
+        <div className="navbar bg-[#097007] shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -9,34 +11,21 @@ export default function Navbar(){
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Histoire</a></li>
+        <li><Link href="/history">Histoire</Link></li>
         <li><a>Certification BIO</a></li>
-        <li>
-          <a>Nos Engagement</a>
-          <ul className="p-2">
-            <li><a>Histoire</a></li>
-            <li><a>Geo</a></li>
-          </ul>
-        </li>
+        <li><Link href="/Pages/Engagement">Nos Engagement</Link></li>
         <li><a>Collaborations</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Bloom</a>
+
+    <Link href="/"><button className="btn btn-ghost text-xl">Bloom</button></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Histoire</a></li>
-      <li><a>Certification BIO</a></li>
-      <li><a>Collaborations</a></li>
-      <li>
-        <details>
-          <summary>Nos Engagement</summary>
-          <ul className="p-2 z-1 bg-[#f39c12]">
-            <li><a>Histoire</a></li>
-            <li><a>Geo</a></li>
-          </ul>
-        </details>
-      </li>
+      <li><Link href="/history">Histoire</Link></li>
+      <li><Link href="/Pages/Certificate">Certification BIO</Link></li>
+      <li><Link href="/Pages/Collaboration">Collaborations</Link></li>
+      <li><Link href="/Pages/Engagement">Nos Engagement</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
