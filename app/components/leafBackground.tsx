@@ -15,6 +15,11 @@ const LeafMotifBackground = ({ children }: LeafBackgroundProps) => {
     'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', // Diamond leaf
     'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)', // Octagon leaf
     'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)', // Teardrop leaf
+    'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)', // Rounded square leaf
+    'polygon(40% 0%, 60% 0%, 100% 40%, 80% 100%, 20% 100%, 0% 40%)', // Triangular leaf
+    'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', // Diamond leaf
+    'polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)', // Octagon leaf
+    'polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)', // Teardrop leaf
     'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)' // Rounded square leaf
   ];
 
@@ -26,23 +31,24 @@ const LeafMotifBackground = ({ children }: LeafBackgroundProps) => {
     '#4caf50', // Medium green
     '#8bc34a', // Lime green
     '#006400', // Deep green
-    '#32cd32'  // Lime green
+    '#32cd32', // Lime green
+    '#DF950DFF', // Orange
   ];
 
   // Generate leaves only on the client side
   useEffect(() => {
     const generatedLeaves = [];
-    const leafCount = 20; // Increased number of leaves
+    const leafCount = Math.random() * 30 + 20; // Increased number of leaves
 
     for (let i = 0; i < leafCount; i++) {
       // Random properties for each leaf
-      const size = Math.floor(Math.random() * 50) + 30; // Size between 30px and 80px
+      const size = Math.floor(Math.random() * 40) + 20; // Size between 30px and 80px
       const shapeIndex = Math.floor(Math.random() * leafShapes.length);
       const colorIndex = Math.floor(Math.random() * greenShades.length);
       const opacity = (Math.random() * 0.5) + 0.2; // Opacity between 0.2 and 0.7
       const top = `${Math.floor(Math.random() * 100)}%`;
       const left = `${Math.floor(Math.random() * 100)}%`;
-      const rotation = Math.floor(Math.random() * 360); // Full rotation possibilities
+      const rotation = Math.floor(Math.random() * 360) + 90; // Full rotation possibilities
       const scale = (Math.random() * 0.5) + 0.5; // Scale between 0.5 and 1.0
 
       generatedLeaves.push(
@@ -58,14 +64,14 @@ const LeafMotifBackground = ({ children }: LeafBackgroundProps) => {
             top: top,
             left: left,
             transform: `rotate(${rotation}deg) scale(${scale})`,
-            transition: 'transform 10s ease-in-out',
+            transition: 'transform 5s infinite ease-in-out',
             zIndex: 1
           }}
         />
       );
     }
     setLeaves(generatedLeaves);
-  }, []);
+  },[]);
 
   return (
     <div className="relative bg-[#fef9e7] min-h-screen w-full overflow-hidden">

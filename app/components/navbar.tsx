@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar(){
     return(
-        <div className="navbar bg-[#097007] shadow-sm">
+<div className="navbar bg-[#097007] shadow-sm">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ export default function Navbar(){
 
     <Link href="/"><button className="btn btn-ghost text-xl">Bloom</button></Link>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex rounded-b-4xl">
     <ul className="menu menu-horizontal px-1">
       <li><Link href="/history">Histoire</Link></li>
       <li><Link href="/Pages/Certificate">Certification BIO</Link></li>
