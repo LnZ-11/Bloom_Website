@@ -12,9 +12,9 @@ export default function Navbar(){
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><Link href="/history">Histoire</Link></li>
-        <li><a>Certification BIO</a></li>
-        <li><Link href="/Pages/Engagement">Nos Engagement</Link></li>
-        <li><a>Collaborations</a></li>
+        <li><Link href="/certification">Certification BIO</Link></li>
+        <li><Link href="/engagement">Nos Engagement</Link></li>
+        <li><Link href="/collaboration">Collaborations</Link></li>
       </ul>
     </div>
 
@@ -23,13 +23,12 @@ export default function Navbar(){
   <div className="navbar-center hidden lg:flex rounded-b-4xl">
     <ul className="menu menu-horizontal px-1">
       <li><Link href="/history">Histoire</Link></li>
-      <li><Link href="/Pages/Certificate">Certification BIO</Link></li>
-      <li><Link href="/Pages/Collaboration">Collaborations</Link></li>
-      <li><Link href="/Pages/Engagement">Nos Engagement</Link></li>
+      <li><Link href="/certification">Certification BIO</Link></li>
+      <li><Link href="/collaboration">Collaborations</Link></li>
+      <li><Link href="/engagement">Nos Engagement</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-[#0b8a43] text-white border-none">Button</a>
   </div>
 </div>
     )

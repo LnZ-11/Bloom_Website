@@ -9,7 +9,8 @@ interface CardProps {
 export default function Card({image, invert}: CardProps) {
     return (
         <div className="w-full my-8">
-            {invert ? (
+            {invert ? 
+                (
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
                     <div className="w-full md:w-1/2">
                         <Image 
@@ -24,7 +25,8 @@ export default function Card({image, invert}: CardProps) {
                         <Carousel />
                     </div>
                 </div>
-            ) : (
+                ) : 
+                (
                 <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full">
                     <div className="w-full md:w-1/2 p-2">
                         <Image 
@@ -39,7 +41,8 @@ export default function Card({image, invert}: CardProps) {
                         <Carousel />
                     </div>
                 </div>
-            )}
+                )
+            }
         </div>
     );
 }
