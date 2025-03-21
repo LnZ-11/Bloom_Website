@@ -33,7 +33,7 @@ function Carousel() {
               priority
             />
             <div className="absolute inset-0 flex items-center justify-center bg-[#51DA02FF] bg-opacity-40 z-10 text-black pointer-events-none p-2">
-              <p className='text-center text-xl md:text-3xl'> 💡 Chaque bouteille de Bloom, c'est un petit pas vers une energie plus naturelle... et un grand pas loin des boissons industrielles </p>
+              <p className='text-center text-xl md:text-3xl font-[Amatic SC]'> 💡 Chaque bouteille de Bloom, c'est un petit pas vers une energie plus naturelle... et un grand pas loin des boissons industrielles </p>
             </div>
           </div>
         </SwiperSlide>

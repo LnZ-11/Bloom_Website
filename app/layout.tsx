@@ -14,7 +14,7 @@ export default function RootLayout({
       <body className="h-auto w-full">
         <Navbar/>
         <LeafMotifBackground>
-        <main className="flex flex-col font-[caveat] w-full max-w-5xl mx-auto gap-4 h-auto justify-center  text-center text-black">
+        <main className="flex flex-col font-[Gochi Hand] w-full max-w-5xl mx-auto gap-4 h-auto justify-center font-[caveat] text-center text-black">
         {children}
         </main>
         </LeafMotifBackground>

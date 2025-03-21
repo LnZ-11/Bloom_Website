@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer(){
     return(
         <div>
-            <div className="absolute flex flex-col md:flex-row gap-6 bg-[#0b8a43] w-full h-auto justify-evenly p-12">
+            <div className="absolute flex flex-col md:flex-row gap-6 bg-gradient-to-r from-teal-400 to-yellow-200 w-full h-auto justify-evenly p-12 text-black font-[caveat]">
                 <div className="flex flex-col gap-4">
                     <h3 className="text-lg font-bold">Liens utiles</h3>
                     <ul>
