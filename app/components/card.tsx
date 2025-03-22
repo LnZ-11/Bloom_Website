@@ -18,7 +18,7 @@ export default function Card({image, invert}: CardProps) {
                             alt="Bloom product image" 
                             width={1200} 
                             height={800}
-                            className="w-full h-full object-contain rounded-xl shadow-md"
+                            className="w-full h-full object-contain rounded-xl shadow-[1px_9px_5px_3px_rgba(224,_225,_91,_0.4)]"
                         />
                     </div>
                     <div className="w-full md:w-1/2 pr-4">
@@ -27,17 +27,17 @@ export default function Card({image, invert}: CardProps) {
                 </div>
                 ) : 
                 (
-                <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full">
+                <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full ">
                     <div className="w-full md:w-1/2 p-2">
                         <Image 
                             src={image} 
                             alt="Bloom product image" 
                             width={1200} 
                             height={800} 
-                            className="w-full h-full object-contain rounded-xl shadow-md"
+                            className="w-full h-full object-contain rounded-xl "
                         />
                     </div>
-                    <div className="w-full md:w-1/2 p-2">
+                    <div className="w-full md:w-1/2 p-2 ">
                         <Carousel />
                     </div>
                 </div>
