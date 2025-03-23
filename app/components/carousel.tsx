@@ -18,7 +18,7 @@ function Carousel() {
         loop={true}
         pagination={{ clickable: true, dynamicBullets: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
-        className="rounded-xl h-full font-[baloo]"
+        className="rounded-xl h-full font-[Baloo]"
       >
         <SwiperSlide className="bg-gray-100 flex items-center justify-center rounded-lg h-full">
           <div className="relative w-full h-full overflow-hidden">
