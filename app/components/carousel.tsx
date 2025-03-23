@@ -7,11 +7,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
 
-import { MoveLeft } from "lucide-react";
-
 function Carousel() {
   return (
-    <div className="w-full h-full ">
+    <div className="w-full h-full">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
@@ -20,9 +18,9 @@ function Carousel() {
         loop={true}
         pagination={{ clickable: true, dynamicBullets: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
-        className="rounded-xl h-full"
+        className="rounded-xl h-full font-[baloo]"
       >
-        <SwiperSlide className="bg-gray-100 flex items-center justify-center rounded-lg h-full ">
+        <SwiperSlide className="bg-gray-100 flex items-center justify-center rounded-lg h-full">
           <div className="relative w-full h-full overflow-hidden">
             <Image 
               src="/Images/BloomJuice.jpg" 
